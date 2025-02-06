@@ -1,0 +1,36 @@
+.titleTypeOne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.heading-H{
+    display: grid;
+    align-items: center;
+    gap: 80px;
+    grid-template-columns: 1fr auto 1fr;
+    font: bold;
+}
+
+.heading-H .Line{
+    background: 1px solid var(--color-dark-Ex);
+    height: 1px;
+}
+
+.victor{
+    width: 66px;
+    margin: 0 auto;
+}
+
+@media (max-width:1024px) {
+    .heading-H{
+        gap: 40px;
+    }
+}
+
+@media (max-width:1024px) {
+    .heading-H{
+        gap: 20px;
+    }
+}

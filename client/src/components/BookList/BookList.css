@@ -1,0 +1,77 @@
+.booklist, .book-details{
+    padding: 3rem 0;
+    position: relative;
+    top: 60px;
+    background: linear-gradient(rgba(236, 175, 152, 0.3), rgba(245, 243, 160, 0)), url("../../images/designer.pn") center/cover no-repeat;
+}
+
+.booklist-content{
+    gap: 3rem;
+}
+
+.book-item{
+    padding: 3rem 2rem;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    background: linear-gradient(rgba(213, 6, 213, 0.3), rgba(5, 5, 5, 0.5)), url("../../images/cover.webp") center/cover no-repeat;
+    box-shadow: rgba(142, 12, 12, 0.05) 0px 5px 15px 0px;
+    transition: var(--transition);
+}
+
+.book-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.book-item-img img{
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.book-item-info{
+    margin-top: 2rem;
+    background-color: aliceblue;
+}
+.book-item-info-item.title{
+    top: 30px;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    background-color: rgb(255, 230, 230);
+    font: optional;
+}
+.book-item-info-item.author{
+    line-height: 1.4;
+    margin-bottom: 4px;
+    background-color: white;
+}
+.book-item-info-item:not(.book-item-info-item.title) span:last-child{
+    opacity: 0.8;
+}
+.book-item-info-item.publish-year{
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 14px;
+    background-color:aquamarine;
+}
+
+@media screen and (min-width: 600px){
+    .booklist-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .booklist-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .book-item-img img{
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .booklist-content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .book-item-img img{
+        max-width: 120px;
+    }
+}
